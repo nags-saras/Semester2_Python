@@ -9,37 +9,37 @@ def display_menu():
 
 def validate_email(email):
     """
-    Basic email validation - checks for @ symbol and proper domain format (part1)
+    Basic email validation - checks for @ symbol
     """
-    return "@" in email and "." in email.split("@")[1]
+    return "@" in email
 
 def signup(user_data):
     """
-    Handle the signup process, collecting user information (part 2)
+    Handle the signup process, collecting user information
     """
     print("\nSign-up Process")
     
-    # Get email with validation check (part 3)
+    # Get email with validation
     while True:
         email = input("Enter your email ID: ")
         if not validate_email(email):
             print("Invalid email format. Please try again.")
             continue
         
-        # Check if email already exists (part 4)
+        # Check if email already exists
         if email in user_data:
             print("Email ID already exists. Please use a different one.")
             return
         break
     
-    # Get password (part 5)
+    # Get password
     password = input("Enter your password: ")
     
     # Get user details
     first_name = input("Enter your first name: ")
     last_name = input("Enter your last name: ")
     
-    # Get and validate age (part 6)
+    # Get and validate age
     while True:
         try:
             age = int(input("Enter your age: "))
@@ -71,7 +71,7 @@ def signin(user_data):
     
     # Check if email exists and password matches
     if email in user_data and user_data[email]["password"] == password:
-        print(f"Welcome back, {user_data[email]['first_name']}!")
+        print(f"Welcome, {user_data[email]['first_name']} {user_data[email]['last_name']}!")
         return True
     else:
         print("Invalid email ID or password.")
@@ -83,7 +83,6 @@ def main():
     """
     # Pre-populated user data as provided in the sample dictionary
     user_data = {
-        "nagashree.hanumanthappa@gmail.com": {"password": "nagashree123", "first_name": "Nagashree", "last_name": "Hanumanthappa", "age": 24},
         "john.doe@example.com": {"password": "john123", "first_name": "John", "last_name": "Doe", "age": 28},
         "jane.smith@example.com": {"password": "jane456", "first_name": "Jane", "last_name": "Smith", "age": 25},
         "alice.jones@example.com": {"password": "alice789", "first_name": "Alice", "last_name": "Jones", "age": 24},
