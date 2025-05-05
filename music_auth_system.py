@@ -1,3 +1,5 @@
+# MODULE 6_ FINAL PROJECT_MUSIC AUTHORIZATION MANAGEMENT SYSTEM
+
 def display_menu():
     """Display the main menu options"""
     print("\nMenu:")
