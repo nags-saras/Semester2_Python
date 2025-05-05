@@ -249,6 +249,21 @@ Enter your age: 30
 Registration successful!
 ```
 
+## Verified Snapshots
+
+# Sign up process tested
+
+![image](https://github.com/user-attachments/assets/6da9d95e-74ad-4ce9-a98f-b69e78bf7891)
+
+# Sign in process tested
+
+![image](https://github.com/user-attachments/assets/03e92fc6-f201-46ae-b4d4-b887b114385d)
+
+# Exiting process tested
+
+![image](https://github.com/user-attachments/assets/040cd776-ebec-49d9-82ea-a46ab2bb7e33)
+
+
 
 ## Author
 
